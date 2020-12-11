@@ -50,7 +50,19 @@ while x == True:
         else:
             x = True
     elif choice1 == 2:
-        pass
+        choice3 = int(input("1.Expenditure Breakdown\n2.Average Spend\n3.Total Expenditure\n"))
+        if choice3 == 1:
+            pass
+
+        if choice3 == 2:
+            x = sum(items[3])
+            y = len(items[3])
+            print("The average spend is: ", x / y)
+
+        if choice3 == 3:
+            x = sum(items[3])
+            print("The total expenditure is: ", x)
+            
     elif choice1 == 3:
         x = False
     else:
